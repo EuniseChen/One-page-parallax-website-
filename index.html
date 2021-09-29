@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ededed;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo {
+            z-index: 1;
+            position: fixed;
+            top: 50px;
+            left: 50px;
+    
+        }
+
+        .logo img {
+            width: 150px;
+            height: 150px;
+        }
+
+      
+
+        .links {
+            z-index: 1;
+            position: fixed;
+            top: 50px;
+            right: 20px;
+             
+        }
+
+        .links>a {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+        .container1,
+        .container2,
+        .container3,
+        .container4 {
+            position: relative;
+            background-attachment: fixed;
+            background-position: center top -184px;
+            background-repeat: no-repeat;
+            background-size: 70%;
+
+        }
+
+        .container1 {
+            width: auto;
+            height: 100vh;
+            background-image: url(./images/wombat.jpg);
+            min-height: 100%;
+        }
+
+        .container2 {
+            width: auto;
+            height: 35vh;
+            background-image: url(./images/wombat2.jpg);
+        }
+
+        .container3 {
+            width: auto;
+            height: 35vh;
+            background-image: url(./images/possum2.jpg);
+        }
+
+        .container4 {
+            width: auto;
+            height: 100vh;
+            background-image: url(./images/possum.jpg);
+        }
+
+
+        .black-box,
+        .transparent-box {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            width: auto;
+            height: auto;
+            padding: 18px;
+            text-align: center;
+            font-size: 25px;
+            letter-spacing: 10px;
+            color: white;
+        }
+
+        .black-box {
+            background-color: rgba(0, 0, 0, .8);
+        }
+
+        .transparent-box {
+            background-color: rgba(0, 0, 0, .2);
+
+        }
+
+        .container-A,
+        .container-B,
+        .container-C {
+            width: auto;
+            height: auto;
+            padding: 50px 146px;
+        }
+
+        .container-A {
+            background-color: #fff;
+            color: black;
+        }
+
+        .container-B,
+        .container-C {
+            background-color: black;
+            color: #fff;
+        }
+
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            letter-spacing: 1px;
+            line-height: 25px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="links">
+            <a href="#Wombat">Wombat</a>
+            <a href="#Introduction">Introduction</a>
+            <a href="#Possum">Possum</a>
+        </div>
+
+        <div class="logo">
+            <a href="">
+                <img src="./images/logo.jpg.png" alt="">
+            </a>
+
+        </div>
+        <div class="container1" id="Wombat">
+            <span class="black-box">SCROLL DOWN</span>
+        </div>
+
+        <div class="container-A">
+            <h3>LOOK! A WOMBAT</h3>
+            <p>
+                This large, stocky mammal is a marsupial, or pouched animal, found in Australia and on scattered islands
+                nearby. Like other marsupials, the wombat gives birth to tiny, undeveloped young that crawl into a pouch
+                on their mother's belly. A wombat baby remains in its mother's pouch for about five months before
+                emerging. Even after it leaves the pouch, the young animal will frequently crawl back in to nurse or to
+                escape danger. By about seven months of age, a young wombat can care for itself.
+            </p>
+        </div>
+        <div class="container2" id="Introduction">
+            <span class="transparent-box">KEEP GOING</span>
+        </div>
+
+        <div class="container-B">
+            <P>
+                COMMON BRUSHTAIL POSSUM is the Australian marsupial most often seen by city dwellers.
+            </P>
+        </div>
+
+        <div class="container3">
+            <span class="transparent-box">SCROLL UP</span>
+        </div>
+
+        <div class="container-C">
+            <p>
+                The brush-tailed possum is the most widely distributed possum in Australia.
+            </p>
+        </div>
+
+        <div class="container4" id="Possum">
+            <span class="black-box">CUTE!</span>
+        </div>
+
+    </div>
+</body>
+
+</html>
